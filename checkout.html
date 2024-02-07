@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>LoSunn</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <i class="bi bi-earbuds ms-3"></i>
+          <span class="ms-4">LoSunn</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+            <li class="nav-item ms-5">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="seller.html">Seller</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="wrap">
+      <div class="row justify-content-center mt-5 main">
+        <div class="col-md-10">
+          <section class="py-5">
+            <!-- BILLING ADDRESS-->
+            <h4 class="text-uppercase mb-4">Billing details</h4>
+            <div class="row">
+              <div class="col-md-8">
+                <form action="#">
+                  <div class="row gy-3">
+                    <div class="col-md-6">
+                      <label class="form-label text-sm" for="firstName"
+                        >First Name
+                      </label>
+                      <input
+                        class="form-control form-control-sm"
+                        type="text"
+                        id="firstName"
+                        placeholder="John"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label text-sm" for="lastName"
+                        >Last Name
+                      </label>
+                      <input
+                        class="form-control form-control-sm"
+                        type="text"
+                        id="lastName"
+                        placeholder="Smith"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label text-sm" for="email"
+                        >Email Address
+                      </label>
+                      <input
+                        class="form-control form-control-sm"
+                        type="email"
+                        id="email"
+                        placeholder="john@example.com"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label text-sm" for="phone"
+                        >Phone Number
+                      </label>
+                      <input
+                        class="form-control form-control-sm"
+                        type="tel"
+                        id="phone"
+                        placeholder="+1-0000000000"
+                      />
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label class="form-label text-sm" for="country"
+                        >Country</label
+                      >
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option value="default">USA</option>
+                        <option value="india">India</option>
+                        <option value="japan">Japan</option>
+                        <option value="netherlands">Netherlands</option>
+                      </select>
+                    </div>
+                    <div class="col-md-12">
+                      <label class="form-label text-sm" for="address"
+                        >Address Line 1
+                      </label>
+                      <input
+                        class="form-control form-control-sm"
+                        type="text"
+                        id="address"
+                        placeholder="3900 Cap St."
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <label class="form-label text-sm" for="addressalt"
+                        >Address Line 2
+                      </label>
+                      <input
+                        class="form-control form-control-sm"
+                        type="text"
+                        id="addressalt"
+                        placeholder="LondonHomes"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label text-sm" for="city">City </label>
+                      <input
+                        class="form-control form-control-sm"
+                        type="text"
+                        id="city"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label text-sm" for="state"
+                        >State
+                      </label>
+                      <input
+                        class="form-control form-control-sm"
+                        type="text"
+                        id="state"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- ORDER SUMMARY-->
+              <div class="col-md-4">
+                <div class="card border-0 rounded-0 p-lg-4 bg-light shadow">
+                  <div class="card-body">
+                    <h5 class="mb-4">Your Order</h5>
+                    <ul class="list-unstyled mb-0">
+                      <li
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        Headphones <span class="text-muted small">$250</span>
+                      </li>
+                      <li class="border-bottom my-2"></li>
+                      <li
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        Wired Headphones<span class="text-muted small"
+                          >$351</span
+                        >
+                      </li>
+                      <li class="border-bottom my-2"></li>
+                      <li
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <strong>Total</strong><span>$601</span>
+                      </li>
+                    </ul>
+                    <div class="row mt-2 justify-content-center">
+                      <div class="col-md-5 form-group">
+                        <button
+                          class="btn shadow"
+                          style="background-color: #4941a7; color: #fff"
+                          type="submit"
+                        >
+                          Place order
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-light text-white">
+      <div class="container py-4">
+        <div class="row py-5">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="text-uppercase mb-3">Customer services</h6>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="footer-link" href="#!">Seller</a>
+              </li>
+              <li><a class="footer-link" href="#!">Products</a></li>
+              <li>
+                <a class="footer-link" href="#!">Terms &amp; Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="text-uppercase mb-3">Company</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a class="footer-link" href="#!">About Us</a></li>
+              <li><a class="footer-link" href="#!">Latest Posts</a></li>
+              <li><a class="footer-link" href="#!">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="text-uppercase mb-3">Social media</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a class="footer-link" href="#!">Twitter</a></li>
+              <li><a class="footer-link" href="#!">Instagram</a></li>
+              <li><a class="footer-link" href="#!">Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-top pt-4">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="small mb-0 text-dark">
+                &copy; 2024 All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
